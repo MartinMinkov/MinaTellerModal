@@ -1,0 +1,160 @@
+@import "../monument-grotesk.css";
+
+.mina-modal {
+  width: 554px;
+  height: 497px;
+  background-image: url("../img/mina_background.jpg");
+  background-size: cover;
+
+  color: var(--mina-black);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-left: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+
+.mina-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.mina-modal__header > img:nth-child(2) {
+  padding-bottom: 10px;
+}
+
+.mina-modal__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.mina-modal__body > h3 {
+  font-size: 30px;
+  font-weight: normal;
+  width: 238px;
+  text-align: start;
+  margin-bottom: 6px;
+}
+.mina-modal__body > p {
+  font-family: "Monument Grotesk Mono";
+  font-size: 12px;
+  width: 300px;
+  text-align: start;
+  margin-top: 3px;
+}
+
+.proof-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.proof-submit > span {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 3rem;
+}
+
+.mina-button {
+  font-family: "Monument Grotesk Mono";
+  position: relative;
+  text-decoration: none;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--mina-black);
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 1px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: background 200ms ease-out 0ms;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+.mina-button::after {
+  position: absolute;
+  content: "";
+  inset: 0.25rem -0.25rem -0.25rem 0.25rem;
+  transform: translateZ(-1px);
+  transition: transform 200ms ease-in 0ms, border 50ms ease-in 100ms;
+
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border: 1px solid var(--mina-black);
+}
+.mina-button:hover {
+  background-image: url("../img/mina_button_hover.png");
+  background-size: cover;
+  background-color: var(--mina-black);
+  color: white;
+}
+.mina-button:hover::after {
+  border: 0px solid black;
+  transform: translate(-0.25rem);
+}
+.mina-button > :first-child {
+  margin-left: 15px;
+}
+.mina-button--proof {
+  background-color: var(--mina-teal);
+  width: 176px;
+}
+.mina-button--cancel {
+  background-color: var(--mina-grey);
+  width: 102px;
+}
+.mina-button--submit {
+  background-color: white;
+  width: 130px;
+}
+
+.mina-proof-uploaded-label {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid var(--mina-teal);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.mina-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.mina-app-download {
+  color: var(--mina-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mina-app-download > svg {
+  margin-left: 0.5rem;
+}
