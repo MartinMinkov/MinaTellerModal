@@ -1,22 +1,29 @@
 @import "../monument-grotesk.css";
 
+:root {
+  box-sizing: border-box;
+  --mina-black: #2d2d2d;
+  --mina-orange: #ff503b;
+  --mina-grey: #d9d9d9;
+  --mina-teal: #9fe4c9;
+  font-family: "Monument Grotesk";
+}
+
 .mina-modal {
-  width: 554px;
-  height: 497px;
-  background-image: url("../img/mina_background.jpg");
-  background-size: cover;
+  z-index: 100;
+  position: fixed;
 
   color: var(--mina-black);
+  width: 34rem;
+  height: 31rem;
+  background-image: url("../img/mina_background.jpg");
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-
-  padding-left: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 15px;
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
 }
 
 .mina-modal__header {
@@ -26,7 +33,7 @@
   width: 100%;
 }
 .mina-modal__header > img:nth-child(2) {
-  padding-bottom: 10px;
+  padding-bottom: 0.75rem;
 }
 
 .mina-modal__body {
@@ -37,18 +44,18 @@
   width: 100%;
 }
 .mina-modal__body > h3 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: normal;
-  width: 238px;
+  width: 16rem;
   text-align: start;
-  margin-bottom: 6px;
+  margin-bottom: 0.5rem;
 }
 .mina-modal__body > p {
   font-family: "Monument Grotesk Mono";
-  font-size: 12px;
-  width: 300px;
+  font-size: 0.75rem;
+  width: 19rem;
   text-align: start;
-  margin-top: 3px;
+  margin-top: 0.2rem;
 }
 
 .proof-submit {
@@ -59,7 +66,7 @@
 }
 .proof-submit > span {
   display: flex;
-  font-size: 20px;
+  font-size: 1.25rem;
   flex-direction: column;
   align-items: flex-start;
   margin-right: 3rem;
@@ -69,7 +76,7 @@
   font-family: "Monument Grotesk Mono";
   position: relative;
   text-decoration: none;
-  height: 48px;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,14 +87,9 @@
   cursor: pointer;
   transform-style: preserve-3d;
   transition: background 200ms ease-out 0ms;
-
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.7rem;
   text-align: center;
   white-space: nowrap;
 }
@@ -115,26 +117,23 @@
   transform: translate(-0.25rem);
 }
 .mina-button > :first-child {
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 .mina-button--proof {
   background-color: var(--mina-teal);
-  width: 176px;
+  width: 11rem;
 }
 .mina-button--cancel {
   background-color: var(--mina-grey);
-  width: 102px;
+  width: 6rem;
 }
 .mina-button--submit {
   background-color: white;
-  width: 130px;
+  width: 8rem;
 }
 
 .mina-proof-uploaded-label {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 0.875rem 1rem;
   border: 1px solid var(--mina-teal);
   border-radius: 2px;
   cursor: pointer;
@@ -156,5 +155,5 @@
   text-decoration: none;
 }
 .mina-app-download > svg {
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
 }

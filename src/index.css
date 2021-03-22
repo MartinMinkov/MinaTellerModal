@@ -12,12 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-:root {
-  box-sizing: border-box;
-  --mina-black: #2d2d2d;
-  --mina-orange: #ff503b;
-  --mina-grey: #d9d9d9;
-  --mina-teal: #9fe4c9;
-  font-family: "Monument Grotesk";
-}

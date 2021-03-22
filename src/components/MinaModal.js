@@ -87,7 +87,7 @@ const MinaModal = ({
           }}
         >
           Submit
-          <MinaIcon kind="ArrowRightSmall" />
+          <MinaIcon kind="ArrowRightSmall" fill="#ff503b" />
         </button>
       </div>
     </div>
